@@ -63,7 +63,7 @@ arch = [
     "i3blocks",
     "i3lock",
     "i3status",
-    "picom",
+    #"picom",
     "rofi",
 
 
@@ -124,7 +124,7 @@ arch = [
 # Essential
     "alacritty",
     "flatpak",
-    "ghostty-git",
+    #"ghostty-git",
     "libvirt",
     "ripgrep",
     "xterm",
