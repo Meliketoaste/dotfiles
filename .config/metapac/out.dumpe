@@ -1,0 +1,12 @@
+arch = [
+    "alacritty",
+    "flatpak",
+    "ghostty-git",
+    "libvirt",
+    "ripgrep",
+    "xterm",
+    "yay",
+    "yay-debug",
+]
+flatpak = ["org.mozilla.firefox"]
+

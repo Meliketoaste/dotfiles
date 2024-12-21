@@ -1,0 +1,160 @@
+arch = [
+    # Dev stuff
+    "neovim",
+    "tmux",
+
+    "base",
+    "base-devel",
+    "chezmoi",
+    "efibootmgr",
+    "git",
+    "github-cli",
+    "grub",
+    "gst-plugin-pipewire",
+    "less",
+    "libluv",
+    "libpulse",
+    "libutempter",
+    "libutf8proc",
+    "libuv",
+    "libvterm",
+    "linux",
+    "linux-firmware",
+    "lua51-lpeg",
+    "luajit",
+    "man-db",
+    "msgpack-c",
+    "networkmanager",
+    "openssh",
+
+    # Fonts
+    "ttf-dejavu",
+    "ttf-liberation",
+    "noto-fonts",
+
+    # clipboard
+    "xclip",
+
+    # audio
+    "pavucontrol",
+    "pipewire",
+    "pipewire-alsa",
+    "pipewire-jack",
+    "pipewire-pulse",
+
+    "tree-sitter",
+    "tree-sitter-c",
+    "tree-sitter-lua",
+    "tree-sitter-markdown",
+    "tree-sitter-query",
+    "tree-sitter-vim",
+    "tree-sitter-vimdoc",
+    "unibilium",
+    "vim",
+    "wireplumber",
+    "zram-generator",
+    
+    "lightdm",
+    "lightdm-gtk-greeter",
+
+    # i3
+    "dmenu",
+    "i3-wm",
+    "i3blocks",
+    "i3lock",
+    "i3status",
+    "picom",
+    "rofi",
+
+
+    "adobe-source-code-pro-fonts",
+    "adwaita-cursors",
+    "adwaita-icon-theme",
+    "adwaita-icon-theme-legacy",
+    "at-spi2-core",
+    "cairomm-1.16",
+    "cantarell-fonts",
+    "dav1d",
+    "desktop-file-utils",
+    "gdk-pixbuf2",
+    "glib-networking",
+    "glibmm-2.68",
+    "graphene",
+    "gsettings-desktop-schemas",
+    "gsettings-system-schemas",
+    "gssdp",
+    "gst-plugins-bad-libs",
+    "gtk-update-icon-cache",
+    "gtk3",
+    "gtk4",
+    "gtkmm-4.0",
+    "gupnp",
+    "gupnp-igd",
+    "hicolor-icon-theme",
+    "jbigkit",
+    "jq",
+    "json-glib",
+    "lcms2",
+    "libcanberra",
+    "libcloudproviders",
+    "libcolord",
+    "libcups",
+    "libjpeg-turbo",
+    "libnice",
+    "libproxy",
+    "librsvg",
+    "libsigc++-3.0",
+    "libsoup3",
+    "libstemmer",
+    "libtiff",
+    "libva",
+    "libxdamage",
+    "libxkbcommon",
+    "libxkbcommon-x11",
+    "libxklavier",
+    "pangomm-2.48",
+    "shared-mime-info",
+    "sound-theme-freedesktop",
+    "tdb",
+    "tinysparql",
+    "vulkan-icd-loader",
+
+
+
+# Essential
+    "alacritty",
+    "flatpak",
+    "ghostty-git",
+    "libvirt",
+    "ripgrep",
+    "xterm",
+    "yay",
+    "zsh",
+
+    "fd",
+    "fzf",
+    "sesh-bin",
+    "stow",
+    "unzip",
+    "zoxide",
+
+    "btop",
+    "dash",
+    "imlib2",
+    "picom-git",
+    "ttf-iosevka",
+    "ttf-jetbrains-mono-nerd",
+
+    #"yay-debug",
+
+]
+flatpak = ["org.mozilla.firefox"]
+
+
+cargo = [
+    "metapac",
+]
+
+rustup = [
+    "stable-x86_64-unknown-linux-gnu",
+]

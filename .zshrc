@@ -109,8 +109,8 @@ zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup
 # Aliases
 alias ls='ls --color'
 #alias vim='nvim'
-alias c='clear'
 alias n='nvim'
+alias cd='z'
 
 # Shell integrations
 eval "$(fzf --zsh)"
