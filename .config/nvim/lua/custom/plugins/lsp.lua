@@ -51,7 +51,10 @@ return {
         -- python = { "isort", "black" },
         --
         -- You can use 'stop_after_first' to run the first available formatter from the list
-        -- javascript = { "prettierd", "prettier", stop_after_first = true },
+        javascript = { 'prettierd', 'prettier', stop_after_first = true },
+        typescript = { 'prettier', stop_after_first = true },
+        typescriptreact = { 'prettierd', 'prettier', stop_after_first = true },
+        astro = { 'prettier' },
       },
     },
   },
@@ -87,6 +90,7 @@ return {
         --ts_ls = {},
         --
 
+        astro = {},
         lua_ls = {
           -- cmd = {...},
           -- filetypes = { ...},
@@ -228,6 +232,7 @@ return {
         'java-debug-adapter',
         'java-test',
         'google-java-format',
+        'astro',
         --'html',
         --'cssls',
         --'tailwindcss',
@@ -251,6 +256,36 @@ return {
           end,
         },
       }
+      require('lspconfig')['gdscript'].setup {
+        name = 'godot',
+        cmd = vim.lsp.rpc.connect('127.0.0.1', 6005),
+      }
     end,
   },
+  {
+    'pmizio/typescript-tools.nvim',
+    dependencies = { 'nvim-lua/plenary.nvim', 'neovim/nvim-lspconfig' },
+    opts = {},
+  },
+
+  -- tailwind-tools.lua
+  {
+
+    'luckasRanarison/tailwind-tools.nvim',
+    name = 'tailwind-tools',
+    build = ':UpdateRemotePlugins',
+    dependencies = {
+      'nvim-treesitter/nvim-treesitter',
+      'nvim-telescope/telescope.nvim', -- optional
+      'neovim/nvim-lspconfig', -- optional
+    },
+    opts = {}, -- your configuration
+  },
+  -- tailwind-tools.lua
+  -- {
+  --   'laytan/tailwind-sorter.nvim',
+  --   dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-lua/plenary.nvim' },
+  --   build = 'cd formatter && npm ci && npm run build',
+  --   config = true,
+  -- },
 }
