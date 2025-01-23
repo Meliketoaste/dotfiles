@@ -109,12 +109,10 @@ keybind = alt+six=unbind
 keybind = alt+seven=unbind
 
 # Window
-window-padding-x = 0
-window-padding-y = 0
-# window-padding-balance = false
+
 # window-inherit-working-directory = true
 # window-inherit-font-size = true
-# window-decoration = true
+window-decoration = false
 # window-theme = auto
 # window-save-state = default
 # window-new-tab-position = current
@@ -133,13 +131,13 @@ confirm-close-surface = false
 #shell-integration-features = cursor,no-sudo,title
 
 # Advanced
- linux-cgroup = single-instance
+#linux-cgroup = single-instance
+
 
 # GTK
 gtk-single-instance = desktop
-gtk-titlebar = false
-gtk-tabs-location = top
-gtk-wide-tabs = true
+gtk-titlebar=false
+gtk-adwaita = false
 
 #theme = catppuccin-macchiato
 
@@ -279,3 +277,6 @@ theme = tokyonight
 # palette = 19=#262626
 # palette = 20=#ac8a8c
 # palette = 21=#e7e7e7
+
+window-padding-y = 0
+window-padding-x = 0

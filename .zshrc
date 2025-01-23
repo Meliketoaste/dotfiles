@@ -120,3 +120,17 @@ eval "$(zoxide init zsh)"
 . "$HOME/.atuin/bin/env"
 
 eval "$(atuin init zsh)"
+
+export XDG_DATA_HOME="$HOME/.local/share"
+
+export ODIN_ROOT="/home/main/Odin"
+
+export PATH=$PATH:/home/main/Downloads/laravel-dev-tools
+
+# pnpm
+export PNPM_HOME="/home/main/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end

@@ -25,6 +25,7 @@ return {
   },
   build = ":TSUpdate",
   opts = {
+
     highlight = { enable = true },
     incremental_selection = { enable = true },
     indent = { enable = true },
@@ -117,5 +118,23 @@ return {
     vim.keymap.set({ "n", "x", "o" }, "F", ts_repeat_move.builtin_F_expr, { expr = true })
     vim.keymap.set({ "n", "x", "o" }, "t", ts_repeat_move.builtin_t_expr, { expr = true })
     vim.keymap.set({ "n", "x", "o" }, "T", ts_repeat_move.builtin_T_expr, { expr = true })
+    require("nvim-treesitter.configs").setup(opts)
+
+    ---@class parser_config
+    local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
+    parser_config.blade = {
+      install_info = {
+        url = "https://github.com/EmranMR/tree-sitter-blade",
+        files = { "src/parser.c" },
+        branch = "main",
+      },
+      filetype = "blade",
+    }
+
+    vim.filetype.add({
+      pattern = {
+        [".*%.blade%.php"] = "blade",
+      },
+    })
   end,
 }

@@ -10,8 +10,11 @@ alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
 
+export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CONFIG_HOME=$HOME/.config
 export PATH=$PATH:/usr/local/bin:/usr/bin
+export PATH=$PATH:/home/main/Downloads/laravel-dev-tools
+export ODIN_ROOT="/home/main/Odin"
 
 # Wayland Fix
 # export QT_QPA_PLATFORM="wayland"

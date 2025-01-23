@@ -18,8 +18,9 @@ return {
     },
 
     { "<C-LeftMouse>", "<Cmd>MultipleCursorsMouseAddDelete<CR>", mode = { "n", "i" }, desc = "Add or remove cursor" },
+
     {
-      "<C-g",
+      "<C-g>",
       "<Cmd>MultipleCursorsAddJumpNextMatch<CR>",
       mode = { "n", "x" },
       desc = "Add cursor and jump to next cword",
