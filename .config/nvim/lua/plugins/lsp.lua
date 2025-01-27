@@ -3,29 +3,37 @@ return {
   {
     "neovim/nvim-lspconfig",
 
-    config = function()
-      local lspconfig = require("lspconfig")
-      local configs = require("lspconfig.configs")
+    -- config = function()
+    --   local lspconfig = require("lspconfig")
+    --   local configs = require("lspconfig.configs")
+    --
+    --   -- -- Configure it
+    --   -- configs.blade = {
+    --   --   default_config = {
+    --   --     -- Path to the executable: laravel-dev-generators
+    --   --     cmd = { "laravel-dev-tools", "lsp" },
+    --   --     filetypes = { "blade" },
+    --   --     root_dir = function(fname)
+    --   --       return lspconfig.util.find_git_ancestor(fname)
+    --   --     end,
+    --   --     settings = {},
+    --   --   },
+    --   -- }
+    --   -- -- Set it up
+    --   -- lspconfig.blade.setup({
+    --   --   -- Capabilities is specific to my setup.
+    --   --   capabilities = capabilities,
+    --   -- })
+    -- end,
 
-      -- Configure it
-      configs.blade = {
-        default_config = {
-          -- Path to the executable: laravel-dev-generators
-          cmd = { "laravel-dev-tools", "lsp" },
-          filetypes = { "blade" },
-          root_dir = function(fname)
-            return lspconfig.util.find_git_ancestor(fname)
-          end,
-          settings = {},
-        },
-      }
-      -- Set it up
-      lspconfig.blade.setup({
-        -- Capabilities is specific to my setup.
-        capabilities = capabilities,
-      })
-    end,
     opts = {
+
+      servers = {
+        gdscript = {
+          name = "godot",
+          cmd = vim.lsp.rpc.connect("127.0.0.1", 6005),
+        },
+      },
       setup = {
         godot = function(_, opts)
           local lspconfig = require("lspconfig")

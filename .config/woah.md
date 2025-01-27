@@ -26,6 +26,7 @@ font-size = 10
 # adjust-cell-height =
 # adjust-font-baseline =
 # adjust-underline-position =
+
 #adjust-underline-thickness = 1
 #adjust-strikethrough-position = 1
 adjust-strikethrough-thickness = 1

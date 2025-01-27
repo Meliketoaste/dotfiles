@@ -11,6 +11,11 @@ return {
     -- compilation output, add:
     -- { "m00qek/baleia.nvim", tag = "v1.3.0" },
   },
+  keys = {
+
+    { "<leader>r", "<Cmd>Recompile<CR>" },
+    { "<leader>R", "<Cmd>Compile<CR>" },
+  },
   config = function()
     ---@type CompileModeOpts
     vim.g.compile_mode = {

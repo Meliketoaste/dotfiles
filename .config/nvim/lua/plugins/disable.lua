@@ -1,6 +1,7 @@
 return {
   { "nvim-neo-tree/neo-tree.nvim", enabled = false },
   { "folke/flash.nvim", enabled = false },
+  -- { "folke/noice.nvim", enabled = false },
 
   {
     "snacks.nvim",
@@ -20,13 +21,31 @@ return {
 
       quickfile = { enabled = true },
       toggle = { map = LazyVim.safe_keymap_set },
+      terminal = { enabled = false },
       words = { enabled = true },
     },
-    -- stylua: ignore
     keys = {
-      { "<leader>n", function() Snacks.notifier.show_history() end, desc = "Notification History", },
-      { "<leader>un", function() Snacks.notifier.hide() end, desc = "Dismiss All Notifications", },
-      { "<leader>Z", function() Snacks.zen() end, desc = "[Z]en Mode", },
+      {
+        "<leader>n",
+        function()
+          Snacks.notifier.show_history()
+        end,
+        desc = "Notification History",
+      },
+      {
+        "<leader>un",
+        function()
+          Snacks.notifier.hide()
+        end,
+        desc = "Dismiss All Notifications",
+      },
+      {
+        "<leader>Z",
+        function()
+          Snacks.zen()
+        end,
+        desc = "[Z]en Mode",
+      },
     },
   },
   {

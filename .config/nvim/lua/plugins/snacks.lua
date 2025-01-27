@@ -41,5 +41,6 @@ return {
     quickfile = { enabled = false },
     toggle = { map = LazyVim.safe_keymap_set },
     words = { enabled = true },
+    terminal = { enabled = false },
   },
 }
