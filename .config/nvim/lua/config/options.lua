@@ -5,3 +5,5 @@ vim.g.lazyvim_php_lsp = "phpactor"
 
 -- vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 vim.opt.listchars = { tab = "  ", trail = " ", nbsp = "␣" }
+
+vim.opt.completeopt = { "menu", "menuone" }
