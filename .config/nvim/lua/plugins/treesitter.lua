@@ -1,4 +1,14 @@
 return {
+  { "leafOfTree/vim-svelte-plugin" },
+  -- { "yioneko/nvim-yati", requires = "nvim-treesitter/nvim-treesitter" },
+  -- {
+  --   "VidocqH/auto-indent.nvim",
+  --   opts = {
+  --     indentexpr = function(lnum)
+  --       return require("nvim-treesitter.indent").get_indent(lnum)
+  --     end,
+  --   },
+  -- },
   --   "nvim-treesitter/nvim-treesitter",
   --   version = false, -- last release is way too old and doesn't work on Windows
   --   build = ":TSUpdate",

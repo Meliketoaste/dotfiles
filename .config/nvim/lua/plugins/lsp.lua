@@ -1,3 +1,4 @@
+local prettier = { "prettierd", "prettier", stop_after_first = true }
 return {
 
   {
@@ -36,6 +37,7 @@ return {
         },
         ols = {
 
+          name = "odin",
           cmd = { "/home/main/ols/ols" },
           -- root_dir = function(path)
           --   local lspUtil = require("lspconfig.util")
@@ -119,6 +121,48 @@ return {
     end,
   },
 
+  {
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        "prettierd",
+      },
+    },
+  },
+  {
+    "stevearc/conform.nvim",
+    optional = true,
+    opts = {
+      formatters_by_ft = {
+        ["javascript"] = prettier,
+        ["javascriptreact"] = prettier,
+        ["typescript"] = prettier,
+        ["typescriptreact"] = prettier,
+        ["vue"] = prettier,
+        ["css"] = prettier,
+        ["scss"] = prettier,
+        ["less"] = prettier,
+        ["html"] = prettier,
+        ["json"] = prettier,
+        ["jsonc"] = prettier,
+        ["yaml"] = prettier,
+        ["markdown"] = prettier,
+        ["markdown.mdx"] = prettier,
+        ["graphql"] = prettier,
+        -- ["svelte"] = prettier,
+        ["handlebars"] = prettier,
+      },
+    },
+  },
+  {
+    "luckasRanarison/nvim-devdocs",
+    optional = true,
+    opts = {
+      ensure_installed = {
+        "prettier",
+      },
+    },
+  },
   -- require("lspconfig")["gdscript"].setup({
   --   name = "godot",
   --   cmd = vim.lsp.rpc.connect("127.0.0.1", 6005),

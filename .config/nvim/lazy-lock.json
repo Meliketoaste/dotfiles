@@ -1,5 +1,6 @@
 {
   "LazyVim": { "branch": "main", "commit": "2bea40c447b72e54ffb2d5cddc98d7798990796f" },
+  "SchemaStore.nvim": { "branch": "main", "commit": "085d1a9c4f30de56e312931582e80805f0ed3621" },
   "blink.cmp": { "branch": "main", "commit": "b6f11a0aa33e601c469a126e3ed6e35208fe3ea3" },
   "bufferline.nvim": { "branch": "main", "commit": "655133c3b4c3e5e05ec549b9f8cc2894ac6f51b3" },
   "catppuccin": { "branch": "main", "commit": "f67b886d65a029f12ffa298701fb8f1efd89295d" },
@@ -56,6 +57,10 @@
   "ts-comments.nvim": { "branch": "main", "commit": "872dcfa0418f4a33b7437fb4d9f4e89f2f000d74" },
   "vague.nvim": { "branch": "main", "commit": "aa744dbf7bfc768da3dd232ccde3b337182903dc" },
   "vesper.nvim": { "branch": "main", "commit": "4e96a753a964192b5904598e64366a93eef5449d" },
+  "vim-dadbod": { "branch": "master", "commit": "9f0ca8bcef704659820a95c3bbd2c262583a66a1" },
+  "vim-dadbod-completion": { "branch": "master", "commit": "c7f1be21a08b8fc9d927a19db89a4aa995402787" },
+  "vim-dadbod-ui": { "branch": "master", "commit": "f4d37b7312ae6489e5c04bee654ca521baac188a" },
   "vim-godot": { "branch": "master", "commit": "1c8385789f7f4558bdbbf6e75033b34b4727944b" },
+  "vim-svelte-plugin": { "branch": "master", "commit": "fcc81292340c0969e83131021c5a6c9aa0c741dc" },
   "which-key.nvim": { "branch": "main", "commit": "6cebd86917df559a88de0f806b2989799c6e6423" }
 }

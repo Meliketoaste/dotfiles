@@ -3,9 +3,10 @@ local set = vim.opt_local
 set.shiftwidth = 4
 set.tabstop = 4
 set.softtabstop = 4
-set.expandtab = true
-set.autoindent = true
-set.smartindent = true
+set.expandtab = false
+set.autoindent = false
+set.smartindent = false
+set.cindent = false
 
 -- Auto-indent Odin files before saving
 -- vim.api.nvim_create_autocmd("BufWritePre", {

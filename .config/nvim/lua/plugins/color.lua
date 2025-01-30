@@ -29,7 +29,22 @@ return {
     "gmr458/cold.nvim",
   },
 
-  { "datsfilipe/vesper.nvim" },
+  {
+    "datsfilipe/vesper.nvim",
+    opts = {
+      italics = {
+        comments = false,
+        keywords = false,
+        functions = false,
+        strings = false,
+        variables = false,
+      },
+      -- overrides = vim.tbl_extend("force", {
+      --   IndentLineChar = { fg = require("utils").static_color },
+      --   NotifyINFOBorder = { fg = require("utils").static_color },
+      -- }, {}),
+    },
+  },
   -- Using lazy.nvim
   {
     "cdmill/neomodern.nvim",
