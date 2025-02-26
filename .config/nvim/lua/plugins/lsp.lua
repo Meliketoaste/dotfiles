@@ -35,6 +35,11 @@ return {
           name = "godot",
           cmd = vim.lsp.rpc.connect("127.0.0.1", 6005),
         },
+
+        phpactor = {
+          mason = false,
+        },
+
         ols = {
 
           name = "odin",
@@ -160,6 +165,15 @@ return {
     opts = {
       ensure_installed = {
         "prettier",
+      },
+    },
+  },
+  {
+    "mfussenegger/nvim-lint",
+    optional = true,
+    opts = {
+      linters_by_ft = {
+        php = false,
       },
     },
   },
